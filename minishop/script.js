@@ -100,29 +100,29 @@ minus.addEventListener('click', function () {
     if (count == 0) {
         productPrice.innerText = `${tempPrice}`;
         quantity.placeholder = '1';
-        minus.removeEventListener("deactivate", function () { 
-            
+        minus.removeEventListener("deactivate", function () {
+
         });
     }
 
 });
 let clickCount = 0;
-addToCart.addEventListener("click", function(){
-    
+addToCart.addEventListener("click", function () {
+
     clickCount++;
     let title = productTitle.innerText;
     let totalPrice;
     let quantity;
-    if(count==0){
+    if (count == 0) {
         quantity = 1;
         totalPrice = parseFloat(productPrice.innerText);
     }
-    else{
+    else {
         quantity = count;
         totalPrice = result;
     }
     localStorage.setItem("Produkt" + clickCount, `${title}  ${totalPrice.toFixed(2)} ${quantity}`);
-    
+
 });
 
 closeButton.addEventListener("click", function () {
@@ -134,6 +134,6 @@ closeButton.addEventListener("click", function () {
 
 });
 
-document.getElementById("clearLocal").addEventListener("click", function(){
+document.getElementById("clearLocal").addEventListener("click", function () {
     localStorage.clear();
 })
