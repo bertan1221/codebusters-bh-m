@@ -122,17 +122,21 @@ addToCart.addEventListener("click", function () {
         totalPrice = result;
     }
     localStorage.setItem("Produkt" + clickCount, `${title}  ${totalPrice.toFixed(2)} ${quantity}`);
-
+    close();
 });
 
 closeButton.addEventListener("click", function () {
+    close();
+
+});
+
+function close(){
     popup.style.display = "none";
     price = 0.0;
     result = 0.0;
     quantity.placeholder = `1`;
     count = 0;
-
-});
+}
 
 document.getElementById("clearLocal").addEventListener("click", function () {
     localStorage.clear();
