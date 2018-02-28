@@ -111,11 +111,18 @@ addToCart.addEventListener("click", function(){
     
     clickCount++;
     let title = productTitle.innerText;
-    let totalPrice = result;
-    let quantity = count;
-    localStorage.setItem("Produkt" + clickCount, title);
-    localStorage.setItem("Cena"+ clickCount, totalPrice);
-    localStorage.setItem("Kolicina"+ clickCount, quantity);
+    let totalPrice;
+    let quantity;
+    if(count==0){
+        quantity = 1;
+        totalPrice = parseFloat(productPrice.innerText);
+    }
+    else{
+        quantity = count;
+        totalPrice = result;
+    }
+    localStorage.setItem("Produkt" + clickCount, `${title}  ${totalPrice.toFixed(2)} ${quantity}`);
+    
 });
 
 closeButton.addEventListener("click", function () {
@@ -127,3 +134,6 @@ closeButton.addEventListener("click", function () {
 
 });
 
+document.getElementById("clearLocal").addEventListener("click", function(){
+    localStorage.clear();
+})
