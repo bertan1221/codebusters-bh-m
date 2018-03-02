@@ -36,17 +36,17 @@ $(document).ready(() => {
     $.each(itemsArray,function( key,element){
        
        debugger;
+       
         let priceItems=`
-        <p class="purchaseTitle">${element.title} </p>
+        <p class="purchaseTitle">${element.title} <b>-</b> Price: ${element.totalPrice}$ </span> <b>-</b> Quantity:${element.quantity}</p>`
         
-        <p  style="padding:8px; font-size:17px;" ><span class="price"><b>Price: ${element.totalPrice} $</b></span> <span class="quantity"><b>Quanitity:${element.quantity}</b></span> </p>`
-      
         priceBox.append(priceItems);
         totalPriceForAll+=parseFloat((element.totalPrice).toFixed(2));
+        $('.purchaseTitle').css("border-top", "1px solid white").css("border-bottom", "1px solid white");
         
     })
     $('#total-price').html("");
-    let total=` <p style="padding-left:10px; font-size:20px;"><b>Total Price: <span id="totoal-price"> ${totalPriceForAll.toFixed(2)} $ </b></span></p>`
+    let total=` <p style="padding-left:10px; font-size:20px;"><b>Total Price: <span id="total-price"> ${totalPriceForAll.toFixed(2)} $ </b></span></p>`
     $('#total-price').append(total);
     $('.btn-back').css('display','none');
   
@@ -74,3 +74,8 @@ $(".container-right").hide();
  
 });
 
+// let priceItems=`
+//         <h3 class="purchaseTitle">${element.title} </h3>
+//         <h4 class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, laboriosam.</h3>
+//         <p  style="padding:8px; font-size:17px;" ><span class="price"><b>Price: ${element.totalPrice} $</b></span> <span class="quantity"><b>Quanitity:${element.quantity}</b></span> </p>`
+      
