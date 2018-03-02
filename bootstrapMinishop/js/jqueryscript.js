@@ -39,7 +39,7 @@ $(document).ready(() => {
        debugger;
        
         let priceItems=`
-        <p class="purchaseTitle">${element.title} <b>-</b> Price: ${(element.totalPrice).toFixed(2)}$ </span> <b>-</b> Quantity:${element.quantity}</p>`
+        <p class="purchaseTitle">${element.title} <b>-</b> Price: ${(element.totalPrice).toFixed(2)}$ </span> <b>-</b> Quantity: ${element.quantity}</p>`
         
         priceBox.append(priceItems);
         totalPriceForAll+=parseFloat((element.totalPrice).toFixed(2));
