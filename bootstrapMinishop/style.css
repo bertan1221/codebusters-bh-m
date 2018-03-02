@@ -15,7 +15,10 @@
 }  
 
 
-
+.d-block{
+    width: 250px;
+    height: 250px;
+} 
 
 #TextRightTop, TextRightMiddle{
     display: inline-block;        
