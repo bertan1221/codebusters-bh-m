@@ -37,8 +37,8 @@ $(document).ready(() => {
        
        debugger;
         let priceItems=`
-        <h3 class="purchaseTitle">${element.title} </h3>
-        <h4 class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, laboriosam.</h3>
+        <p class="purchaseTitle">${element.title} </p>
+        
         <p  style="padding:8px; font-size:17px;" ><span class="price"><b>Price: ${element.totalPrice} $</b></span> <span class="quantity"><b>Quanitity:${element.quantity}</b></span> </p>`
       
         priceBox.append(priceItems);
@@ -73,3 +73,4 @@ $(".container-right").hide();
 
  
 });
+

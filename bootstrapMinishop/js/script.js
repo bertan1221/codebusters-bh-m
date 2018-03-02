@@ -2,6 +2,14 @@ let a = document.getElementsByClassName('a')[0];
 let b = document.getElementsByClassName('b')[0];
 let c = document.getElementsByClassName('c')[0];
 let d = document.getElementsByClassName('d')[0];
+let e = document.getElementsByClassName('e')[0];
+let f = document.getElementsByClassName('f')[0];
+let g = document.getElementsByClassName('g')[0];
+let h = document.getElementsByClassName('h')[0];
+let i = document.getElementsByClassName('i')[0];
+let j = document.getElementsByClassName('j')[0];
+let k = document.getElementsByClassName('k')[0];
+let m = document.getElementsByClassName('m')[0];
 
 
 let productTitle = document.getElementById("ProductTitle");
@@ -59,23 +67,73 @@ window.onload = function () {
         price = document.getElementById("ProductPrice").innerText;
     });
 
-    // e.addEventListener("click", function () {
-    //     leftSide.style.backgroundImage = "url('pictures/random4.jpg')";
-    //     productTitle.innerHTML = "random4";
-    //     productDescription.innerHTML = "Description za random4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quos molestias maxime aliquam. Veniam minima sequi similique quis eaque unde, quia reprehenderit fugit illo pariatur doloribus nemo, mollitia ex aperiam";
-    //     productPrice.innerHTML = "3.99";
-    //     popup.style.display = "block";
-    //     price = document.getElementById("ProductPrice").innerText;
-    // });
+    e.addEventListener("click", function () {
+        leftSide.style.backgroundImage = "url('pictures/5.jpg')";
+        productTitle.innerHTML = "random4";
+        productDescription.innerHTML = "Description za random4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quos molestias maxime aliquam. Veniam minima sequi similique quis eaque unde, quia reprehenderit fugit illo pariatur doloribus nemo, mollitia ex aperiam";
+        productPrice.innerHTML = "3.99";
+        popup.style.display = "block";
+        price = document.getElementById("ProductPrice").innerText;
+    });
 
-    // f.addEventListener("click", function () {
-    //     leftSide.style.backgroundImage = "url('pictures/random5.jpg')";
-    //     productTitle.innerHTML = "random5";
-    //     productDescription.innerHTML = "Description za random5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quos molestias maxime aliquam. Veniam minima sequi similique quis eaque unde, quia reprehenderit fugit illo pariatur doloribus nemo, mollitia ex aperiam";
-    //     productPrice.innerHTML = "20.49";
-    //     popup.style.display = "block";
-    //     price = document.getElementById("ProductPrice").innerText;
-    // });
+    f.addEventListener("click", function () {
+        leftSide.style.backgroundImage = "url('pictures/6.jpg')";
+        productTitle.innerHTML = "random5";
+        productDescription.innerHTML = "Description za random5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quos molestias maxime aliquam. Veniam minima sequi similique quis eaque unde, quia reprehenderit fugit illo pariatur doloribus nemo, mollitia ex aperiam";
+        productPrice.innerHTML = "20.49";
+        popup.style.display = "block";
+        price = document.getElementById("ProductPrice").innerText;
+    });
+    g.addEventListener("click", function () {
+        leftSide.style.backgroundImage = "url('pictures/7.jpg')";
+        productTitle.innerHTML = "random5";
+        productDescription.innerHTML = "Description za random5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quos molestias maxime aliquam. Veniam minima sequi similique quis eaque unde, quia reprehenderit fugit illo pariatur doloribus nemo, mollitia ex aperiam";
+        productPrice.innerHTML = "20.49";
+        popup.style.display = "block";
+        price = document.getElementById("ProductPrice").innerText;
+    });
+
+    h.addEventListener("click", function () {
+        leftSide.style.backgroundImage = "url('pictures/8.jpg')";
+        productTitle.innerHTML = "random5";
+        productDescription.innerHTML = "Description za random5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quos molestias maxime aliquam. Veniam minima sequi similique quis eaque unde, quia reprehenderit fugit illo pariatur doloribus nemo, mollitia ex aperiam";
+        productPrice.innerHTML = "20.49";
+        popup.style.display = "block";
+        price = document.getElementById("ProductPrice").innerText;
+    });
+
+    i.addEventListener("click", function () {
+        leftSide.style.backgroundImage = "url('pictures/9.jpg')";
+        productTitle.innerHTML = "random5";
+        productDescription.innerHTML = "Description za random5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quos molestias maxime aliquam. Veniam minima sequi similique quis eaque unde, quia reprehenderit fugit illo pariatur doloribus nemo, mollitia ex aperiam";
+        productPrice.innerHTML = "20.49";
+        popup.style.display = "block";
+        price = document.getElementById("ProductPrice").innerText;
+    });
+    j.addEventListener("click", function () {
+        leftSide.style.backgroundImage = "url('pictures/10.jpg')";
+        productTitle.innerHTML = "random5";
+        productDescription.innerHTML = "Description za random5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quos molestias maxime aliquam. Veniam minima sequi similique quis eaque unde, quia reprehenderit fugit illo pariatur doloribus nemo, mollitia ex aperiam";
+        productPrice.innerHTML = "20.49";
+        popup.style.display = "block";
+        price = document.getElementById("ProductPrice").innerText;
+    });
+    k.addEventListener("click", function () {
+        leftSide.style.backgroundImage = "url('pictures/11.jpg')";
+        productTitle.innerHTML = "random5";
+        productDescription.innerHTML = "Description za random5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quos molestias maxime aliquam. Veniam minima sequi similique quis eaque unde, quia reprehenderit fugit illo pariatur doloribus nemo, mollitia ex aperiam";
+        productPrice.innerHTML = "20.49";
+        popup.style.display = "block";
+        price = document.getElementById("ProductPrice").innerText;
+    });
+    m.addEventListener("click", function () {
+        leftSide.style.backgroundImage = "url('pictures/12.jpg')";
+        productTitle.innerHTML = "random5";
+        productDescription.innerHTML = "Description za random5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quos molestias maxime aliquam. Veniam minima sequi similique quis eaque unde, quia reprehenderit fugit illo pariatur doloribus nemo, mollitia ex aperiam";
+        productPrice.innerHTML = "20.49";
+        popup.style.display = "block";
+        price = document.getElementById("ProductPrice").innerText;
+    });
 
 
     plus.addEventListener('click', function () {
