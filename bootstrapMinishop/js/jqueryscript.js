@@ -6,7 +6,7 @@ $(document).ready(() => {
    
     addToCard.on('click',function(){
 
-        close();
+        
         debugger;
         clickCount++;
         let title = productTitle.innerText;
@@ -32,13 +32,14 @@ $(document).ready(() => {
     let priceBox=$('.box2');
     priceBox.html("");
     let totalPriceForAll=0;
+    
     debugger;
-    $.each(itemsArray,function( key,element){
+    $.each(itemsArray,function(key,element){
        
        debugger;
        
         let priceItems=`
-        <p class="purchaseTitle">${element.title} <b>-</b> Price: ${element.totalPrice}$ </span> <b>-</b> Quantity:${element.quantity}</p>`
+        <p class="purchaseTitle">${element.title} <b>-</b> Price: ${(element.totalPrice).toFixed(2)}$ </span> <b>-</b> Quantity:${element.quantity}</p>`
         
         priceBox.append(priceItems);
         totalPriceForAll+=parseFloat((element.totalPrice).toFixed(2));
@@ -49,7 +50,7 @@ $(document).ready(() => {
     let total=` <p style="padding-left:10px; font-size:20px;"><b>Total Price: <span id="total-price"> ${totalPriceForAll.toFixed(2)} $ </b></span></p>`
     $('#total-price').append(total);
     $('.btn-back').css('display','none');
-  
+    close();
 })
 $('#purche').on('click',function(){
     localStorage.clear();
