@@ -7,7 +7,7 @@ $("body").prepend(`
     </ul>
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link nav-link-custom" id="navStories" href="../stories/story01.html">STORIES</a>
+            <a class="nav-link nav-link-custom" id="navStories" href="../slider/slider.html">STORIES</a>
         </li>
         <li class="nav-item">
             <a class="nav-link nav-link-custom" id="navMap" href="../map/map.html">CEMETERY MAP</a>
