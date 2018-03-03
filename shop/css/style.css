@@ -1,4 +1,7 @@
-
+body{
+    margin: 0;
+    padding: 0;
+}
 .modal-content{
     background-color: white;
     color:rgb(35, 35, 35);
