@@ -1,0 +1,92 @@
+#sliderDesc{
+    position: fixed;
+    z-index: 1000;
+    color: white;
+    pointer-events: none;
+    
+}
+
+#sliderDesc h1{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 64px;
+}
+
+#sliderExplore{
+    position: fixed;
+    z-index: 1000;
+    color: white;
+}
+
+#exploreBtn{
+    margin-top: 10px;
+    padding: 12px 60px;
+    border: 1px solid grey;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0px 0px 50px 0px #202020;
+}
+
+#exploreBtn:hover{
+    border: 1px solid white;
+    text-shadow: 0px 0px 30px #999999;
+    box-shadow: 0px 0px 50px 5px #303030;
+    cursor: pointer;
+}
+
+.slick-slide {
+    transform: scale(1);
+    transition: 0.3s ease-in-out all;
+    opacity: 0.5;
+}
+
+.slick-slide.slick-center {
+    opacity: 1;
+    transform: scale(1.15);
+    z-index: 999;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider:after,
+.slider:before {
+    content: "";
+    background: #000000;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 12%;
+    z-index: 100;
+}
+
+.slider:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #000000 100%);
+}
+
+.slider:before {
+    background: linear-gradient(to right, #000000 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.img-box {
+    padding: 0;
+    height: 100vh;
+}
+
+.img-box img {
+    width: 100%;
+    box-shadow: 0px 0px 50px 10px black;
+}
+
+article {
+    float: left;
+    margin: 12vh 25px;
+    font-size: 0.8vw;
+}
+
+#sliderDesc, #sliderExplore{
+    display: none;
+}
