@@ -2,7 +2,7 @@ $("body").prepend(`
 <nav class="navbar navbar-custom">
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link nav-link-custom" id="navGate" href="#">BEIT HAIM</a>
+            <a class="nav-link nav-link-custom" id="navGate" href="../index.html">BEIT HAIM</a>
         </li>
     </ul>
     <ul class="nav">
