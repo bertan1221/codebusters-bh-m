@@ -18,24 +18,52 @@ body{
 #addToCart{
     margin-right: 35%;
     
+    
+}
+.h-100{
+    text-align: center;
+}
+.linkDescription, .linkPrice{
+    color: black;
+    margin: auto;
+}
+.img-thumbnail{
+    border: none;
 }
 #productDescription{
     font-size: 15px;
 } 
+
+#CartTotalPrice, .card-body{
+    text-align: center;
+}
+#total-price{
+    margin: auto;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: black
+}
 #quantityStyle{
     padding-left: 40px;
     font-weight: bold;
 }
 #priceCard{
     position: fixed;
-    top:15%;
+    top:14.5%;
     left: 72vw;
-   /* opacity: 0.5; */
+    opacity: 0.8; 
+     
 }
 .card-body{
-    max-height: 400px;
-    overflow: auto;
+    max-height: 430px;
+   /* overflow: auto; */
     /* overflow-x: hidden; */
+}
+.box2{
+    max-height: 330px;
+    overflow: auto; 
 }
 #proceedoCheckout{
     margin-left: 95px;
